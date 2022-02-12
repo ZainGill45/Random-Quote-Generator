@@ -1,3 +1,5 @@
+// Quote Generator Program
+
 // quotes object
 var quotes = {
   quoteWiseObj: {

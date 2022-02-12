@@ -1,98 +1,97 @@
 body {
-  /*text-align: center;*/
   color: white;
   font-family: 'Roboto', sans-serif;
 }
+
 #container {
+  display: flex;
   width: 100vw;
   height: 100vh;
   background-color: #36b55c;
-  transition: 0.5s;
+  justify-content: center;
+  align-items: center;
+  transition: background-color ease .5s;
 }
-#quote-box {
-  position: absolute;
-  top: 25%;
-  left: 10%;
-  right: 10%;
-  width: 80%;
-  line-height: .5;
+
+#quoteBox {
+  width: 65%;
+  text-align: right;
 }
-.quote {
-  font-size: 4rem;
-  font-weight: 400;
-  line-height: 1.1;
-  position: relative;
-  margin: 0;
-  }
-.quote:before, .quote:after {
-  font-size: 6rem;
-  line-height: 2.5rem;
-  position: absolute;
+
+#tag {
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 2em;
+  margin-bottom: 25px;
 }
-.quote:before {
+
+#quote {
+  font-size: 4em;
+  text-align: left;
+}
+
+#quote::before {
   font-family: Arial, Helvetica, sans-serif;
   content: "“";
-  top: .25em;
-  left: -.5em;
+  margin-right: 8px;
 }
-.quote:after {
+
+#quote::after {
   font-family: Arial, Helvetica, sans-serif;
   content: "”";
-  bottom: -.1em;
-  margin-left: .1em;
-  position: absolute;
+  margin-left: 8px;
 }
-.source {
-  font-size: 1.25rem;;
-  letter-spacing: 0.05em;
-  line-height: 1.1;
+
+#source {
+  display: inline-block;
+  font-size: 1.8em;
   text-align: right;
-  display: inline-block;
-  margin-left: 80%;
+  margin-top: 30px;
+  margin-right: 8px;
 }
+
+#source::after {
+  content: ",";
+}
+
 #citation {
+  display: inline;
+  margin-right: 8px;
   font-style: italic;
-  display: inline-block;
 }
-#citation:before {
-  content: ", ";
-  margin-right: 5px;
-  font-style: normal;
+
+#citation::after {
+  content: ",";
 }
+
 #year {
   display: inline;
-}
-#year:before {
-  content: ", ";
-  margin-right: 5px;
-  font-style: normal;
+  text-align: right;
 }
 
 #loadQuote {
-  position: fixed;
+  display: block;
   width: 12em;
-  display: inline-block;
-  left: 50%;
-  margin-left: -6em;
-  bottom: 280px;
   border-radius: 4px;
   border: 2px solid #fff;
   color: #fff;
   padding: 15px 0;
   background: transparent;
   cursor: pointer;
-  transition: .5s;
-  font-size: 1.4em;
-  font-weight: 500;
+  margin: auto;
+  margin-top: 35px;
+  font-size: 1.5em;
+  font-family: "Roboto";
 }
+
 #loadQuote:focus {
   outline: none;
 }
-#tag {
-  font-size: 2.1rem;
-}
 
 @media screen and (max-width: 1024px) {
+  #quoteBox {
+    width: 85%;
+  }
   .quote {
     font-size: 2.5rem;
   }
@@ -102,11 +101,5 @@ body {
   .source {
     margin-left: 61%;
     font-size: 1.2rem;
-  }
-  #quote-box  {
-    top: 35%;
-  }
-  #loadQuote {
-    margin-bottom: 300px;
   }
 }
