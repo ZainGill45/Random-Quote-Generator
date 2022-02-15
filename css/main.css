@@ -23,11 +23,13 @@ body {
   margin-bottom: 10px;
   font-size: 2em;
   margin-bottom: 25px;
+  user-select: none;
 }
 
 #quote {
   font-size: 4em;
   text-align: left;
+  user-select: none;
 }
 
 #quote::before {
@@ -48,6 +50,7 @@ body {
   text-align: right;
   margin-top: 30px;
   margin-right: 8px;
+  user-select: none;
 }
 
 #source::after {
@@ -58,6 +61,7 @@ body {
   display: inline;
   margin-right: 8px;
   font-style: italic;
+  user-select: none;
 }
 
 #citation::after {
@@ -67,6 +71,7 @@ body {
 #year {
   display: inline;
   text-align: right;
+  user-select: none;
 }
 
 #loadQuote {
@@ -82,10 +87,27 @@ body {
   margin-top: 35px;
   font-size: 1.5em;
   font-family: "Roboto";
+  user-select: none;
 }
 
 #loadQuote:focus {
   outline: none;
+}
+
+#attribution {
+  z-index: 50;
+  font-size: 0.9em;
+  position: fixed;
+  bottom: 1.8%;
+  right: 92%;
+}
+
+#attribution a {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: azure;
+  bottom: 5px;
 }
 
 @media screen and (max-width: 1024px) {
