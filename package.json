@@ -1,0 +1,15 @@
+{
+  "name": "random-quote-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./Random-Quote-Generator/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0"
+  }
+}

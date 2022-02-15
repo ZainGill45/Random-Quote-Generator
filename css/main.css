@@ -20,14 +20,15 @@ body {
 
 #tag {
   text-align: left;
-  margin-bottom: 10px;
   font-size: 2em;
   margin-bottom: 25px;
+  user-select: none;
 }
 
 #quote {
-  font-size: 4em;
+  font-size: 3.5em;
   text-align: left;
+  user-select: none;
 }
 
 #quote::before {
@@ -46,27 +47,8 @@ body {
   display: inline-block;
   font-size: 1.8em;
   text-align: right;
-  margin-top: 30px;
-  margin-right: 8px;
-}
-
-#source::after {
-  content: ",";
-}
-
-#citation {
-  display: inline;
-  margin-right: 8px;
-  font-style: italic;
-}
-
-#citation::after {
-  content: ",";
-}
-
-#year {
-  display: inline;
-  text-align: right;
+  margin-top: 35px;
+  user-select: none;
 }
 
 #loadQuote {
@@ -82,6 +64,7 @@ body {
   margin-top: 35px;
   font-size: 1.5em;
   font-family: "Roboto";
+  user-select: none;
 }
 
 #loadQuote:focus {
