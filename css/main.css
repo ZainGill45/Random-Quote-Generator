@@ -20,14 +20,13 @@ body {
 
 #tag {
   text-align: left;
-  margin-bottom: 10px;
   font-size: 2em;
   margin-bottom: 25px;
   user-select: none;
 }
 
 #quote {
-  font-size: 4em;
+  font-size: 3.5em;
   text-align: left;
   user-select: none;
 }
@@ -48,29 +47,7 @@ body {
   display: inline-block;
   font-size: 1.8em;
   text-align: right;
-  margin-top: 30px;
-  margin-right: 8px;
-  user-select: none;
-}
-
-#source::after {
-  content: ",";
-}
-
-#citation {
-  display: inline;
-  margin-right: 8px;
-  font-style: italic;
-  user-select: none;
-}
-
-#citation::after {
-  content: ",";
-}
-
-#year {
-  display: inline;
-  text-align: right;
+  margin-top: 35px;
   user-select: none;
 }
 
@@ -92,22 +69,6 @@ body {
 
 #loadQuote:focus {
   outline: none;
-}
-
-#attribution {
-  z-index: 50;
-  font-size: 0.9em;
-  position: fixed;
-  bottom: 1.8%;
-  right: 92%;
-}
-
-#attribution a {
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-  color: azure;
-  bottom: 5px;
 }
 
 @media screen and (max-width: 1024px) {
