@@ -5,7 +5,7 @@ const container = document.querySelector("#container");
 
 const maximumStoredQuotes = 100;
 const maximumQuoteCharacterLimit = 250;
-const intervelBetweenRequests = 2000;
+const intervelBetweenRequests = 3500;
 
 const storedFallBackQuotes = [
   {
